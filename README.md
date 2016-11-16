@@ -92,7 +92,7 @@ console.log(currentStoragePath)
 | Param | Type | Description |
 | --- | --- | --- |
 | key | <code>String</code> | key |
-| value | <code>Object</code> | JSON object |
+| value | <code>Object</code> | value to save |
 
 **Example**  
 ```js
@@ -233,7 +233,7 @@ storage.remove('foobar').subscribe().catch((function(err){ console.log(err) }));
 ```js
 const storage = require('observable-json-storage');
 
-storage.clear(key).subscribe(
+storage.clear().subscribe(
   function() {
     console.log('cleared');
   },
@@ -245,7 +245,7 @@ storage.clear(key).subscribe(
 **Example** *(shortened)*  
 ```js
 const storage = require('observable-json-storage');
-storage.clear('foobar').subscribe().catch((function(err){ console.log(err) }));
+storage.clear().subscribe().catch((function(err){ console.log(err) }));
 ```
 
 
