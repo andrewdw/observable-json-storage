@@ -54,7 +54,7 @@ Passing `true` to `replace` will overwrite the default directory completely.
 ```js
 const storage = require('observable-json-storage');
 // setting path "foo" relative to app's default storage location
-storage.setPath('./foo'); /DEFAULT/PATH/TO/APP/STORAGE/foo
+storage.setPath('./foo'); // /DEFAULT/PATH/TO/APP/STORAGE/foo
 ```
 **Example**  
 ```js
@@ -78,6 +78,7 @@ storage.setPath('/new/path/to/anything'); // /new/path/to/anything
 **Example**  
 ```js
 const storage = require('observable-json-storage');
+
 var currentStoragePath = storage.getPath();
 console.log(currentStoragePath)
 ```
@@ -106,9 +107,10 @@ storage.set('foobar', { foo: 'bar' }).subscribe(
   }
 )
 ```
-**Example** *(Shortened.)*  
+**Example** *(shortened)*  
 ```js
 const storage = require('observable-json-storage');
+
 storage.set('foobar', { foo: 'bar' }).subscribe().catch((function(err){ console.log(err) }));
 ```
 <a name="module_storage.get"></a>
@@ -215,7 +217,7 @@ storage.remove(key).subscribe(
   }
 )
 ```
-**Example** *(Shortened.)*  
+**Example** *(shortened)*  
 ```js
 const storage = require('observable-json-storage');
 storage.remove('foobar').subscribe().catch((function(err){ console.log(err) }));
@@ -239,7 +241,7 @@ storage.clear(key).subscribe(
   }
 )
 ```
-**Example** *(Shortened.)*  
+**Example** *(shortened)*  
 ```js
 const storage = require('observable-json-storage');
 storage.clear('foobar').subscribe().catch((function(err){ console.log(err) }));
