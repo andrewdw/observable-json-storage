@@ -56,17 +56,17 @@ const storage = require('observable-json-storage');
 // setting path "foo" relative to app's default storage location
 storage.setPath('./foo'); // /DEFAULT/PATH/TO/APP/STORAGE/foo
 ```
-**Example**  
+**Example** *(Node)*  
 ```js
 const storage = require('observable-json-storage');
 // completely replace absolute path with Node's root directory
-storage.setPath(__dirname); // /PATH/TO/NODE/APP
+storage.setPath(__dirname, true); // /PATH/TO/NODE/APP
 ```
 **Example**  
 ```js
 const storage = require('observable-json-storage');
 // completely replace absolute path with anything
-storage.setPath('/new/path/to/anything'); // /new/path/to/anything
+storage.setPath('/new/path/to/anything', true); // /new/path/to/anything
 ```
 <a name="module_storage.getPath"></a>
 

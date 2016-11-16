@@ -1,6 +1,6 @@
 {
   "name": "observable-json-storage",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easily read & write persistent data in Node & Electron apps",
   "main": "lib/storage.js",
   "scripts": {
