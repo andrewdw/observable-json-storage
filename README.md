@@ -26,7 +26,7 @@ Documentation
     * [.set(key, value)](#module_storage.set)
     * [.get(key)](#module_storage.get) ⇒ <code>Observable.&lt;(Object\|Boolean)&gt;</code>
     * [.has(key)](#module_storage.has) ⇒ <code>Observable.&lt;Boolean&gt;</code>
-    * [.keys()](#module_storage.keys)
+    * [.keys()](#module_storage.keys) ⇒ <code>Observable.&lt;Array&gt;</code>
     * [.remove(key)](#module_storage.remove)
     * [.clear()](#module_storage.clear)
 
@@ -173,9 +173,10 @@ storage.has('foobar').subscribe(
 ```
 <a name="module_storage.keys"></a>
 
-### storage.keys()
+### storage.keys() ⇒ <code>Observable.&lt;Array&gt;</code>
 **Kind**: static method of <code>[storage](#module_storage)</code>  
 **Summary**: Get the list of saved keys  
+**Returns**: <code>Observable.&lt;Array&gt;</code> - array of key strings  
 **Access:** public  
 **Example**  
 ```js
