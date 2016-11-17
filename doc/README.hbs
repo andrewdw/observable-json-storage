@@ -3,6 +3,7 @@ ovservable-json-storage
 
 > Easily read & write persistent, observable data in Node & Electron apps
 
+[![npm downloads](https://img.shields.io/npm/dm/observable-json-storage.svg)](https://img.shields.io/npm/dm/observable-json-storage.svg)
 [![npm version](https://badge.fury.io/js/observable-json-storage.svg)](https://badge.fury.io/js/observable-json-storage)
 [![dependencies](https://david-dm.org/andrewdw/observable-json-storage.svg)](https://david-dm.org/andrewdw/observable-json-storage.svg)
 
