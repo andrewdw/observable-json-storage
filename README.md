@@ -3,9 +3,9 @@ ovservable-json-storage
 
 > Easily read & write persistent, observable data in Node & Electron apps
 
-[![npm downloads](https://img.shields.io/npm/dm/observable-json-storage.svg)](https://img.shields.io/npm/dm/observable-json-storage.svg)
+[![npm downloads](https://img.shields.io/npm/dm/observable-json-storage.svg)](https://www.npmjs.com/package/observable-json-storage)
 [![npm version](https://badge.fury.io/js/observable-json-storage.svg)](https://badge.fury.io/js/observable-json-storage)
-[![dependencies](https://david-dm.org/andrewdw/observable-json-storage.svg)](https://david-dm.org/andrewdw/observable-json-storage.svg)
+[![dependencies](https://david-dm.org/andrewdw/observable-json-storage.svg)](https://www.npmjs.com/package/observable-json-storage)
 
 Both [Node](http://nodejs.org) and [Electron](http://electron.atom.io) lack easy ways to persist data for your application. `observable-json-storage` implements an API similar to [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) to read and write JSON objects to your application using observable (RxJS) methods.
 
