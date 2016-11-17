@@ -3,7 +3,10 @@ ovservable-json-storage
 
 > Easily read & write persistent, observable data in Node & Electron apps
 
-Both [Node](http://nodejs.org) and [Electron](http://electron.atom.io) lack easy ways to persist data for your application. `observable-json-storage` implements an API similar to [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) to read and write JSON objects to your application using observable methods.
+[![npm version](https://badge.fury.io/js/observable-json-storage.svg)](https://badge.fury.io/js/observable-json-storage)
+[![dependencies](https://david-dm.org/andrewdw/observable-json-storage.svg)](https://david-dm.org/andrewdw/observable-json-storage.svg)
+
+Both [Node](http://nodejs.org) and [Electron](http://electron.atom.io) lack easy ways to persist data for your application. `observable-json-storage` implements an API similar to [localStorage](https://developer.mozilla.org/en/docs/Web/API/Window/localStorage) to read and write JSON objects to your application using observable (RxJS) methods.
 
 Installation
 ------------
@@ -116,13 +119,7 @@ storage.set('foobar', { foo: 'bar' }).subscribe().catch((function(err){ console.
 <a name="module_storage.get"></a>
 
 ### storage.get(key) ⇒ <code>Observable.&lt;(Object\|Boolean)&gt;</code>
-If the key(.json) doesn't exist in the directory, an `false` is returned.
-Also notice that the `.json` extension is added automatically, but it's
-ignored if you pass it yourself.
-
-Passing an extension other than `.json` will result in a file created
-with both extensions. For example, the key `foo.data` will result in a file
-called `foo.data.json`.
+If the key does not exist, `false` is returned.
 
 **Kind**: static method of <code>[storage](#module_storage)</code>  
 **Summary**: Read JSON data  
