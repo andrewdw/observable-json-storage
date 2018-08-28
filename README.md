@@ -1,4 +1,4 @@
-ovservable-json-storage
+observable-json-storage
 =====================
 
 > Easily read & write persistent, observable data in Node & Electron apps
